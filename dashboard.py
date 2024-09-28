@@ -43,25 +43,22 @@ selected_primary_property_type = st.selectbox(
 selected_year_built = st.number_input(
     value="What is the year of construction for the primary building ?",
     step=1,
-    value=1950
-)
+    value=1950)
+
 selected_building_number = st.number_input(
     value="How many buildings is there on the property ?",
     step=1,
-    value=1
-)
+    value=1)
 
 selected_floor_number = st.number_input(
     value="How many floor is there in all the buildings of the property ?",
     step=1,
-    value=1
-)
+    value=1)
 
 selected_gfa_all_building = st.number_input(
     value="GFA of all the building",
     step=0.1,
-    value=100.0
-)
+    value=100.0)
 
 selected_largest_property_type = st.selectbox(
     "What is the largest property type in the selection below ?",
@@ -71,8 +68,7 @@ selected_largest_property_type = st.selectbox(
 selected_gfa_largest_building = st.number_input(
     value="GFA of the largest building",
     step=0.1,
-    value=100.0
-)
+    value=100.0)
 
 selected_secondary_property_type = st.selectbox(
     "What is the secondary property type in the selection below ?",
@@ -82,32 +78,27 @@ selected_secondary_property_type = st.selectbox(
 selected_gfa_secondary_building = st.number_input(
     value="GFA of the secondary building",
     step=0.1,
-    value=100.0
-)
+    value=100.0)
 
 selected_site_energy_use = st.number_input(
     value="Total Site Energy Use Comsuption (kBtu)",
     step=0.1,
-    value=100.0
-)
+    value=100.0)
 
 selected_site_energy_use_wn = st.number_input(
     value="Total Site Energy Use Consumption WN (kBtu)",
     step=0.1,
-    value=100.0
-)
+    value=100.0)
 
 selected_electricity = st.number_input(
     value="Total Electricty Consumption (kBtu)",
     step=0.1,
-    value=100.0
-)
+    value=100.0)
 
 selected_natural_gaz = st.number_input(
     value="Total Natural Gaz Consumption (kBtu)",
     step=0.1,
-    value=100.0
-)
+    value=100.0)
 
 # Création du vecteur d'entrée
 X = pd.DataFrame.from_dict(
