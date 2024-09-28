@@ -10,7 +10,7 @@ from sklearn.inspection import PartialDependenceDisplay
 background_css = """
 <style>
 body {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Flag_of_Seattle.svg/1280px-Flag_of_Seattle.svg.png');
+    background-image: url('https://upload.wikimedia.org/wikipedia/fr/2/26/Drapeau_de_Seattle.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
