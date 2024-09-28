@@ -103,20 +103,20 @@ selected_natural_gaz = st.number_input(
 # Création du vecteur d'entrée
 X = pd.DataFrame.from_dict(
     {
-        'BuildingType':selected_building_type,
-        'PrimaryPropertyType': selected_primary_property_type,
-        'YearBuilt': selected_year_built,
-        'NumberofBuildings': selected_building_number,
-        'NumberofFloors': selected_floor_number,
-        'PropertyGFABuilding(s)': selected_gfa_all_building,
-        'LargestPropertyUseType': selected_largest_property_type,
-        'LargestPropertyUseTypeGFA': selected_gfa_largest_building,
-        'SecondLargestPropertyUseType': selected_secondary_property_type,
-        'SecondLargestPropertyUseTypeGFA': selected_gfa_secondary_building,
-        'SiteEnergyUse(kBtu)': selected_site_energy_use,
-        'SiteEnergyUseWN(kBtu)': selected_site_energy_use_wn,
-        'Electricity(kBtu)': selected_electricity,
-        'NaturalGas(kBtu)': selected_natural_gaz
+        'BuildingType':[selected_building_type],
+        'PrimaryPropertyType': [selected_primary_property_type],
+        'YearBuilt': [selected_year_built],
+        'NumberofBuildings': [selected_building_number],
+        'NumberofFloors': [selected_floor_number],
+        'PropertyGFABuilding(s)': [selected_gfa_all_building],
+        'LargestPropertyUseType': [selected_largest_property_type],
+        'LargestPropertyUseTypeGFA': [selected_gfa_largest_building],
+        'SecondLargestPropertyUseType': [selected_secondary_property_type],
+        'SecondLargestPropertyUseTypeGFA': [selected_gfa_secondary_building],
+        'SiteEnergyUse(kBtu)': [selected_site_energy_use],
+        'SiteEnergyUseWN(kBtu)': [selected_site_energy_use_wn],
+        'Electricity(kBtu)': [selected_electricity],
+        'NaturalGas(kBtu)': [selected_natural_gaz]
     }
     )  # Ajustez selon le nombre de features
 
