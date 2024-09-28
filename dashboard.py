@@ -18,6 +18,8 @@ body {
 </style>
 """
 
+st.markdown(background_css, unsafe_allow_html=True)
+
 @st.cache_resource
 def load_model():
     # Remplacez ceci par le chargement de votre modèle entraîné
