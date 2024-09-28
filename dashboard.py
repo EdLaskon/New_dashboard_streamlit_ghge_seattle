@@ -12,6 +12,8 @@ background_css = """
 body {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Flag_of_Seattle.svg/1280px-Flag_of_Seattle.svg.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 </style>
 """
@@ -129,7 +131,7 @@ st.write(f"Prédiction : {prediction:.2f}")
 st.subheader("Importance des Features")
 
 fig, ax = plt.subplots(figsize=(10, 6))
-PartialDependenceDisplay.from_estimator(model, X, features=[0,1], ax=ax)
+PartialDependenceDisplay.from_estimator(model, X, features=X.columns.tolist(), ax=ax)
 st.pyplot(fig)
 
 # Explication de l'importance des features
