@@ -46,7 +46,7 @@ selected_year_built = st.number_input(
     value=1950)
 
 selected_building_number = st.number_input(
-    value="How many buildings is there on the property ?",
+    label="How many buildings is there on the property ?",
     step=1,
     value=1)
 
